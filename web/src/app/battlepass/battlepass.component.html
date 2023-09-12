@@ -1,0 +1,29 @@
+<div class="container mt-5 card">
+  <h1 class="text-center">Cabalen City Battle Pass</h1>
+  <div class="col-md-2" >
+    <div class="mb-2" >
+      <div class="text-center">
+       <h5>Current Level: {{current}}</h5>
+      </div>
+    </div>
+  </div>  
+    <div class="row scrollmagic">
+        <div class="col-md-4" *ngFor="let data of battlePassData">
+          <div class="card mb-4" >
+            <div class="card-body text-center">
+              <h5 class="card-title">Level {{ data.level }}</h5>
+              <div class="level-icon mx-auto">
+               <img src= {{data.img}}  alt="Description of the image" width="80" height="80">
+              </div>
+              <p class="card-text mt-3">{{ data.reward }}</p>
+            </div>
+          </div>
+        </div>  
+    </div>
+    <div class="container mt-5">
+        <!-- <h1 class="text-center">Parent Component</h1> -->
+        <app-progress-bar [progress]="progress"></app-progress-bar>
+        <h1 class="text-center"></h1>
+        <!-- <button (click)="updateProgress(10)">Update Progress</button> -->
+      </div>
+</div>

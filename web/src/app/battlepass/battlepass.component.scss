@@ -1,0 +1,16 @@
+.level-icon {
+    width: 80px; /* Adjust the width to your desired size */
+    height: 80px; /* Set the same height to ensure it's circular */
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.scrollmagic {
+    max-height: 400px; /* Adjust the max-height as per your requirements */
+    overflow-y: scroll;
+  }
