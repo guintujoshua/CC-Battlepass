@@ -1,11 +1,59 @@
 <div class="container mt-5 card">
   <h1 class="text-center">Cabalen City Battle Pass</h1>
-  <div class="col-md-2" >
-    <div class="mb-2" >
-      <div class="text-center">
-       <h5>Current Level: {{current}}</h5>
+  <div class="row ">
+    <div class="col-md-4" >
+      <div class="card mb-4" >
+        <div class="card-body text-center scrollexp">
+          <h5 class="card-title">Ways to earn EXP</h5>
+          *Kill Bertou <br>
+          *Fish Bertou<br>
+          *Kill Bertou <br>
+          *Fish Bertou<br>
+          *Kill Bertou <br>
+          *Fish Bertou<br>
+          *Kill Bertou <br>
+          *Fish Bertou<br>
+          *Kill Bertou <br>
+          *Fish Bertou<br>
+          *Kill Bertou <br>
+          *Fish Bertou<br>
+          *Kill Bertou <br>
+          *Fish Bertou<br>
+          *Kill Bertou <br>
+          *Fish Bertou<br>
+          *Kill Bertou <br>
+          *Fish Bertou<br>
+          *Kill Bertou <br>
+          *Fish Bertou<br>
+          *Kill Bertou <br>
+          *Fish Bertou<br>
+          *Kill Bertou <br>
+          *Fish Bertou<br>
+          *Kill Bertou <br>
+          *Fish Bertou<br>
+          
+          <p class="card-text mt-3"></p>
+        </div>
       </div>
-    </div>
+    </div>  
+    <div class="col-md-4" >
+      <div class="card mb-4" >
+        <div class="card-body text-center basicinfo ">
+          <h5 class="card-title">Buy Battle Pass</h5>
+          <button type="button" class="btn btn-info">Click Here</button>
+          <p class="card-text mt-3"></p>
+        </div>
+      </div>
+    </div>  
+    <div class="col-md-4" >
+      <div class="card mb-4" >
+        <div class="card-body text-center basicinfo ">
+          <h5 class="card-title">Your Info</h5>
+          <h5>Current Level: {{current}}</h5>
+          <p class="card-text mt-3"></p>
+        </div>
+      </div>
+    </div>  
   </div>  
     <div class="row scrollmagic">
         <div class="col-md-4" *ngFor="let data of battlePassData">
