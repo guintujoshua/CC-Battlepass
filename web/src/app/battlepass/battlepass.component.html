@@ -5,38 +5,18 @@
       <div class="card mb-4" >
         <div class="card-body text-center scrollexp">
           <h5 class="card-title">Ways to earn EXP</h5>
-          *Kill Bertou <br>
-          *Fish Bertou<br>
-          *Kill Bertou <br>
-          *Fish Bertou<br>
-          *Kill Bertou <br>
-          *Fish Bertou<br>
-          *Kill Bertou <br>
-          *Fish Bertou<br>
-          *Kill Bertou <br>
-          *Fish Bertou<br>
-          *Kill Bertou <br>
-          *Fish Bertou<br>
-          *Kill Bertou <br>
-          *Fish Bertou<br>
-          *Kill Bertou <br>
-          *Fish Bertou<br>
-          *Kill Bertou <br>
-          *Fish Bertou<br>
-          *Kill Bertou <br>
-          *Fish Bertou<br>
-          *Kill Bertou <br>
-          *Fish Bertou<br>
-          *Kill Bertou <br>
-          *Fish Bertou<br>
-          *Kill Bertou <br>
-          *Fish Bertou<br>
-          
+          <div>
+            <span class="badge bg-primary rounded-pill">MISSION</span>  <span class="badge bg-primary rounded-pill">To DO</span><span class="badge bg-primary rounded-pill">Completed</span>
+    
+            <div *ngFor="let data of battlePassMission">
+              <span *ngIf="!data.status" class="badge bg-primary rounded-pill">{{data.Mission}}</span>  <span *ngIf="!data.status" class="badge bg-primary rounded-pill">{{data.task}}</span><span *ngIf="!data.status" class="badge bg-primary rounded-pill">{{data.current}}</span>
+            </div>
+          </div>      
           <p class="card-text mt-3"></p>
         </div>
       </div>
     </div>  
-    <div class="col-md-4" >
+    <div class="col-md-4" *ngIf="!status" >
       <div class="card mb-4" >
         <div class="card-body text-center basicinfo ">
           <h5 class="card-title">Buy Battle Pass</h5>
@@ -50,6 +30,7 @@
         <div class="card-body text-center basicinfo ">
           <h5 class="card-title">Your Info</h5>
           <h5>Current Level: {{current}}</h5>
+          <h5>Status: {{status}}</h5>
           <p class="card-text mt-3"></p>
         </div>
       </div>
